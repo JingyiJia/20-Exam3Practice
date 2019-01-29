@@ -6,8 +6,8 @@ This problem provides practice at:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Jingyi.Jia.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # Students:
@@ -81,10 +81,22 @@ def run_test_doubler():
     print('The returned value should be:', expected)
 
     # -------------------------------------------------------------------------
-    # TO DO 2 (continued): Add your ADDITIONAL test(s) here:
+    # Done 2 (continued): Add your ADDITIONAL test(s) here:
     # -------------------------------------------------------------------------
+    # Test 2:
+    arg1 = [22, -5, 10, 3]
+    arg2 = [2, 0, 6]
+    correct_arg1_after = [44, -10, 20, 6]
+    correct_arg2_after = [2, 0, 6]
+    expected = [4, 0, 12]
 
-
+    print('AFTER the function call:')
+    print('  Argument 1 is:       ', arg1)
+    print('  Argument 1 should be:', correct_arg1_after)
+    print('  Argument 2 is:       ', arg2)
+    print('  Argument 2 should be:', correct_arg2_after)
+    print('The returned value is:       ', answer)
+    print('The returned value should be:', expected)
 def doubler(list1, list2):
     """
     Both arguments are lists of integers.  This function:
@@ -103,7 +115,7 @@ def doubler(list1, list2):
         :type list2: list of int
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # -------------------------------------------------------------------------
     # -------------------------------------------------------------------------
@@ -111,6 +123,13 @@ def doubler(list1, list2):
     #    DIFFICULTY:      4
     #    TIME ESTIMATE:   5 minutes.
     # -------------------------------------------------------------------------
+
+    for k in range(len(list1)):
+        list1[k]=2*list1[k]
+    list = []
+    for j in range (len(list2)):
+        list = list + 2*list2[j]
+    return list
 
 
 # -----------------------------------------------------------------------------
